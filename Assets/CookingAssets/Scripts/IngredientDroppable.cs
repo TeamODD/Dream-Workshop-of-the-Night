@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private Image image;
-
+    
     private void Awake()
     {
         image = GetComponent<Image>();
@@ -27,17 +28,31 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
 
         if (dropped != null)
         {
-            dropped.transform.SetParent(transform);
-            dropped.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
+            if (transform.name == "Cooking Slot")
+            {
+                dropped.transform.SetParent(transform);
+                dropped.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
+                Debug.Log("드롭 성공!");
+                //GameManager.Instance.cookingCheck;
+            }
+            else if (transform.name == "Output")
+            {
+                Debug.Log("손님에게 줬다");
+            }
+            else if (transform.name == "Trash Can")
+            {
+                Debug.Log("쓰레기통으로 슛");
+                Destroy(dropped);
+            }
 
-            var group = dropped.GetComponent<CanvasGroup>();
+            CanvasGroup group = dropped.GetComponent<CanvasGroup>();
             if (group != null)
             {
                 group.blocksRaycasts = true;
                 group.alpha = 1.0f;
             }
 
-            Debug.Log("드롭 성공!");
+            
         }
     }
 }
