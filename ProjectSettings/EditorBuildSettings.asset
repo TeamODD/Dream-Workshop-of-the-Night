@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SelectLevel.unity
     guid: 890dcd94141db4441858e451b42547a3
+  - enabled: 0
+    path: Assets/Scenes/Easy_customer.unity
+    guid: 556d2a27c98ca4448a3ad4ce685dcb7a
+  - enabled: 1
+    path: Assets/Scenes/gameOver.unity
+    guid: 8bb83ef5bad29094bbb61328703c2b1c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
