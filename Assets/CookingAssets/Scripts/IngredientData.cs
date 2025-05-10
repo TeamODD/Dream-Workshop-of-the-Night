@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class IngredientData : MonoBehaviour
 {
-    public enum IngredientType { Sugar, Butter, Egg }
+    public enum IngredientType { Milk, Butter, Egg, Special1, Special2, Special3 }
 
-    public IngredientType type;
+    public IngredientType ingredientType;
 
     [Header("UI용 이미지 컴포넌트")]
     public Image image;
@@ -16,7 +16,8 @@ public class IngredientData : MonoBehaviour
     // 외부에서 타입 지정 시 호출
     public void SetType(IngredientType newType)
     {
-        type = newType;
-        image.sprite = sprites[(int)type];
+        ingredientType = newType;
+        image.sprite = sprites[(int)ingredientType];
     }
+
 }

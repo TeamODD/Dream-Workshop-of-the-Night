@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fix Ingredient
   - Special Ingredient
+  - Ingredient
   layers:
   - Default
   - TransparentFX

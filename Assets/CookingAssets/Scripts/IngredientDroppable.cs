@@ -2,11 +2,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using static IngredientData;
 
 public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private Image image;
-    
+    //public CookingCheck cookingCheck;
+
+    //public List<IngredientType> selectedIngredients = new();
+
     private void Awake()
     {
         image = GetComponent<Image>();
@@ -33,11 +37,15 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
                 dropped.transform.SetParent(transform);
                 dropped.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
                 Debug.Log("µå·Ó ¼º°ø!");
-                //GameManager.Instance.cookingCheck;
-            }
-            else if (transform.name == "Output")
-            {
-                Debug.Log("¼Õ´Ô¿¡°Ô Áá´Ù");
+                IngredientData ingredientData = dropped.GetComponent<IngredientData>();
+                if (ingredientData != null)
+                {
+                    Debug.Log(ingredientData.ingredientType);
+                    CookingCheck.inputIngredientList.Add(ingredientData.ingredientType);
+                    //cookingCheck.inputIngredientList.Add(ingredientData.ingredientType);
+                    //selectedIngredients.Add(ingredientData.ingredientType);
+                    //cookingCheck.setInputIngredientList(ingredientData.ingredientType);
+                }
             }
             else if (transform.name == "Trash Can")
             {
@@ -52,7 +60,7 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
                 group.alpha = 1.0f;
             }
 
-            
+
         }
     }
 }
