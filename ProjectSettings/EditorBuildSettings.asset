@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SelectLevel.unity
     guid: 890dcd94141db4441858e451b42547a3
+  - enabled: 0
+    path: Assets/Scenes/Easy_customer.unity
+    guid: 556d2a27c98ca4448a3ad4ce685dcb7a
+  - enabled: 1
+    path: Assets/Scenes/gameOver.unity
+    guid: 8bb83ef5bad29094bbb61328703c2b1c
   - enabled: 1
     path: Assets/Scenes/CustomerScene.unity
     guid: 00553f35f9fd04a40b2a271d23fef080
