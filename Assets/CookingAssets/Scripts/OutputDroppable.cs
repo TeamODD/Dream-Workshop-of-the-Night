@@ -29,9 +29,17 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
         if(eventData.pointerDrag != null)
         {
             GameObject dragged = eventData.pointerDrag;
-            dragged.transform.SetParent(null);
-            DontDestroyOnLoad(dragged);
-            SceneManager.LoadScene("CustomerScene");
+            if(transform.name == "Output")
+            {
+                dragged.transform.SetParent(null);
+                DontDestroyOnLoad(dragged);
+                SceneManager.LoadScene("CustomerScene");
+            }
+            else if (transform.name == "Trash Can")
+            {
+                Debug.Log("쓰레기통으로 슛");
+                Destroy(dragged);
+            }
         }
     }
 }
