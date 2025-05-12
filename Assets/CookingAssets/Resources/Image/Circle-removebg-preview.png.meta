@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Circle-removebg-preview_0: 460968507339186487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
