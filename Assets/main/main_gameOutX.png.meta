@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9692762d938f2fb4c951b27d073c97ba
+guid: f5dc96abda1ee9c4abc3792ae9cea39b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 460968507339186487
-    second: Circle-removebg-preview_0
+      213: -4349664259001411007
+    second: main_gameOutX_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,19 +110,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -152,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Circle-removebg-preview_0
+      name: main_gameOutX_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 8
-        width: 153
-        height: 153
+        x: 1777
+        y: 928
+        width: 69
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73128944a60b56600800000000000000
-      internalID: 460968507339186487
+      spriteID: 14a1206e663e2a3c0800000000000000
+      internalID: -4349664259001411007
       vertices: []
       indices: 
       edges: []
@@ -186,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Circle-removebg-preview_0: 460968507339186487
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
