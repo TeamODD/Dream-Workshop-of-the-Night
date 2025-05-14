@@ -2,11 +2,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using static IngredientData;
+
 
 public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private Image image;
+
+    public CookingControl cookingControl;
     //public CookingCheck cookingCheck;
 
     //public List<IngredientType> selectedIngredients = new();
@@ -18,12 +20,15 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        image.color = Color.yellow;
+        if (IngredientDraggable.CurrentDragged != null)
+        {
+            transform.localScale = new Vector3(1.2f, 1.2f, 1.0f);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        image.color = Color.white;
+        transform.localScale = Vector3.one;
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -34,9 +39,12 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
         {
             if (transform.name == "Cooking Slot")
             {
+                //cookingControl.setFullEmpty(true);
+                cookingControl.playFullAnimation();
                 dropped.transform.SetParent(transform);
                 dropped.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
                 Debug.Log("드롭 성공!");
+                dropped.SetActive(false);
                 IngredientData ingredientData = dropped.GetComponent<IngredientData>();
                 if (ingredientData != null)
                 {
@@ -46,11 +54,6 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
                     //selectedIngredients.Add(ingredientData.ingredientType);
                     //cookingCheck.setInputIngredientList(ingredientData.ingredientType);
                 }
-            }
-            else if (transform.name == "Trash Can")
-            {
-                Debug.Log("쓰레기통으로 슛");
-                Destroy(dropped);
             }
 
             CanvasGroup group = dropped.GetComponent<CanvasGroup>();
