@@ -36,13 +36,16 @@ public class CookingControl : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public void playCookingAnimation()
     {
         Debug.Log(isSuccess);
-        if (isSuccess)
+        if (isFull)
         {
-            animator.SetTrigger("Correct");
-        }
-        else
-        {
-            animator.SetTrigger("Fail");
+            if (isSuccess)
+            {
+                animator.SetTrigger("Correct");
+            }
+            else
+            {
+                animator.SetTrigger("Fail");
+            }
         }
     }
 
