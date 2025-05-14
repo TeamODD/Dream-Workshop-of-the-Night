@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IngredientData : MonoBehaviour
+public class JunIngredientData : MonoBehaviour
 {
     public enum IngredientType { Milk, Butter, Egg, Special1, Special2, Special3 }
 

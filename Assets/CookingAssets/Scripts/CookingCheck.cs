@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using static IngredientData;
+using static JunIngredientData;
 
 /// <summary>
 /// 
@@ -113,7 +113,7 @@ public class CookingCheck : MonoBehaviour
             isCorrect = inputIngredientList.SequenceEqual(correctIngredientList);
             
             cookingControl.setSuccess(isCorrect);
-
+            cookingControl.setFullEmpty(true);
             foreach (Transform child in cookingSlot.transform)
             {
                 if (child.CompareTag("Ingredient"))

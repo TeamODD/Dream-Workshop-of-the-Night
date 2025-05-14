@@ -7,6 +7,7 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
 {
     private Image image;
     private RectTransform rect;
+    public CookingControl cookingControl;
 
     private void Awake()
     {
@@ -44,7 +45,8 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
             else if (transform.name == "Trash Can")
             {
                 Debug.Log("쓰레기통으로 슛");
-                Destroy(dragged);
+                cookingControl.playEmptyAnimation();
+                //Destroy(dragged);
             }
         }
     }

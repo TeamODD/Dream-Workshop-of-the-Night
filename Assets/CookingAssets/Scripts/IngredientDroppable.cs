@@ -45,7 +45,7 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
                 dropped.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
                 Debug.Log("드롭 성공!");
                 dropped.SetActive(false);
-                IngredientData ingredientData = dropped.GetComponent<IngredientData>();
+                JunIngredientData ingredientData = dropped.GetComponent<JunIngredientData>();
                 if (ingredientData != null)
                 {
                     Debug.Log(ingredientData.ingredientType);

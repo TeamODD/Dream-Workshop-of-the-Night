@@ -35,6 +35,7 @@ public class OutputDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         if(transform.parent == canvas)
         {
+            Debug.Log("아니 왜 위치가 이상함?");
             transform.SetParent(previousParent);
             rect.position = previousParent.GetComponent<RectTransform>().position;
         }
