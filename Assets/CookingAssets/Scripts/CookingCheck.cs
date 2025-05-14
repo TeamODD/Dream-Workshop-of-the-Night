@@ -22,9 +22,12 @@ public class CookingCheck : MonoBehaviour
 
     public GameObject completeIngredientPrefab;
     public RectTransform completeSlot;
-    public GameObject correctCookedFoodPrefab;
-    public GameObject wrongCookedFoodPrefab;
+    //public GameObject correctCookedFoodPrefab;
+    //public GameObject wrongCookedFoodPrefab;
+    
     public RectTransform cookingSlot;
+
+    public CookingControl cookingControl;
 
     private void Awake()
     {
@@ -36,6 +39,7 @@ public class CookingCheck : MonoBehaviour
     void Update()
     {
         cookFinishAndMove();
+        
     }
 
     private void setup()
@@ -66,12 +70,13 @@ public class CookingCheck : MonoBehaviour
                 newObj.transform.SetAsFirstSibling();
                 StartCoroutine(fadeOutWhiteScreen());
                 setup();
+                cookingControl.setFullEmpty(false);
+                cookingControl.playEmptyAnimation();
                 //Debug.Log(hit.point);
             }
 
         }
     }
-
 
     private IEnumerator fadeOutWhiteScreen()
     {
@@ -101,33 +106,50 @@ public class CookingCheck : MonoBehaviour
 
     public void OnClickFinish()
     {
-        inputIngredientList.Sort();
-        isCorrect = inputIngredientList.SequenceEqual(correctIngredientList);
-
-        foreach (Transform child in cookingSlot.transform)
+        if (inputIngredientList.Count > 0)
         {
-            if (child.CompareTag("Ingredient"))
+
+            inputIngredientList.Sort();
+            isCorrect = inputIngredientList.SequenceEqual(correctIngredientList);
+            
+            cookingControl.setSuccess(isCorrect);
+
+            foreach (Transform child in cookingSlot.transform)
             {
-                Debug.Log("Destroying " + child.name);
-                child.gameObject.SetActive(false);
-                //Destroy(child.gameObject);
+                if (child.CompareTag("Ingredient"))
+                {
+                    Debug.Log("Destroying " + child.name);
+                    child.gameObject.SetActive(false);
+                    //Destroy(child.gameObject);
+                }
             }
-        }
 
-        if (isCorrect)
-        {
-            // 완성된 재료 프리팹을 생성해서 completeSlot에 붙임
-            GameObject newObj = Instantiate(correctCookedFoodPrefab, cookingSlot);
-            newObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-        }
+            if (isCorrect)
+            {
+                // 완성된 재료 프리팹을 생성해서 completeSlot에 붙임
+                Debug.Log("요리 완성");
+                //GameObject newObj = Instantiate(correctCookedFoodPrefab, cookingSlot);
+                //newObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            }
 
-        else
-        {
-            inputIngredientList.Clear();
-            GameObject newObj = Instantiate(wrongCookedFoodPrefab, cookingSlot);
-            newObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            else
+            {
+                Debug.Log("이걸 요리라고 만든건가?");
+                inputIngredientList.Clear();
+                //GameObject newObj = Instantiate(wrongCookedFoodPrefab, cookingSlot);
+                //newObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            }
         }
     }
 
+    public void setCorrect(bool correct)
+    {
+        isCorrect = correct;
+    }
+
+    public bool getCorrect()
+    {
+        return isCorrect;
+    }
 
 }

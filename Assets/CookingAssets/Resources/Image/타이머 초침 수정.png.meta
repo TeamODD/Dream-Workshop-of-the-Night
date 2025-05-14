@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fbe61764667e13a4aa4bd06aed63e10c
+guid: 14fa4f003a239db4fb144ec406e71451
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4400112872357656447
-    second: HintBook_0
+      213: -5230387873900995116
+    second: "\uD0C0\uC774\uBA38 \uCD08\uCE68 \uC218\uC815_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HintBook_0
+      name: "\uD0C0\uC774\uBA38 \uCD08\uCE68 \uC218\uC815_0"
       rect:
         serializedVersion: 2
-        x: 178
-        y: 14
-        width: 1558
-        height: 1051
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 80
+        y: 134
+        width: 24
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1888f77c7a8afe2c0800000000000000
-      internalID: -4400112872357656447
+      spriteID: 9d8cde269c09d4f49bb77d63020bd504
+      internalID: 36084353
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f48182f15c4d81f43ad51ff33f956080
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HintBook_0: -4400112872357656447
+      "\uD0C0\uC774\uBA38 \uCD08\uCE68 \uC218\uC815_0": 36084353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

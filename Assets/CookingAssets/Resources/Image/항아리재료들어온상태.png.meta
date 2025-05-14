@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: fbe61764667e13a4aa4bd06aed63e10c
+guid: e63eecf8d5295f940bb472810dc52c83
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4400112872357656447
-    second: HintBook_0
+      213: 7764060733584447617
+    second: "\uD56D\uC544\uB9AC\uC7AC\uB8CC\uB4E4\uC5B4\uC628\uC0C1\uD0DC_0"
+  - first:
+      213: 5529020551412116572
+    second: "\uD56D\uC544\uB9AC\uC7AC\uB8CC\uB4E4\uC5B4\uC628\uC0C1\uD0DC_1"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HintBook_0
+      name: "\uD56D\uC544\uB9AC\uC7AC\uB8CC\uB4E4\uC5B4\uC628\uC0C1\uD0DC_0"
       rect:
         serializedVersion: 2
-        x: 178
-        y: 14
-        width: 1558
-        height: 1051
+        x: 1051
+        y: 644
+        width: 487
+        height: 398
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1888f77c7a8afe2c0800000000000000
-      internalID: -4400112872357656447
+      spriteID: 1881cd7f91c7fbb60800000000000000
+      internalID: 7764060733584447617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uD56D\uC544\uB9AC\uC7AC\uB8CC\uB4E4\uC5B4\uC628\uC0C1\uD0DC_1"
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 644
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ce0c2c5e60bbc40800000000000000
+      internalID: 5529020551412116572
       vertices: []
       indices: 
       edges: []
@@ -160,8 +185,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      HintBook_0: -4400112872357656447
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -16,12 +16,18 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        image.color = Color.yellow;
+        if (eventData.pointerDrag != null)
+        {
+            transform.localScale = new Vector3(1.2f, 1.2f, 1.0f);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        image.color = Color.white;
+        if (eventData.pointerDrag != null)
+        {
+            transform.localScale = Vector3.one;
+        }
     }
 
     public void OnDrop(PointerEventData eventData)

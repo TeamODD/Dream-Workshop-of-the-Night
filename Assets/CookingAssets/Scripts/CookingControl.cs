@@ -2,65 +2,81 @@ using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// 마법봉 버튼에 넣는 스크립트
 /// 항아리에 들어온 재료와 정답 목록 비교
 /// </summary>
-public class CookingControl : MonoBehaviour
+public class CookingControl : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public GameObject correctCookedFoodPrefab;
-    public GameObject wrongCookedFoodPrefab;
-    public GameObject cookingSlot;
+    private RectTransform rect;
+    private bool isSuccess;
+    private bool isFull;
 
-    private bool isCorrect;// = inputIngredientList.SequenceEqual(correctIngredientList);
-    //private List<IngredientType> correctList = new();
-    private CookingCheck check;
+    //public CookingCheck cookingCheck;
+    public Animator animator;
     private void Awake()
     {
-        isCorrect = false;
-
+        isSuccess = false;
+        isFull = false;
+        rect = GetComponent<RectTransform>();
     }
 
-    public void OnClickCook()
+    public void OnPointerEnter(PointerEventData eventData)
     {
+        rect.localScale = new Vector3(1.2f, 1.2f, 1.0f);
+    }
 
-        //inputIngredientList.Sort();
-        //bool isCorrect = IngredientData.inputIngredientList.SequenceEqual(IngredientData.correctIngredientList);
-        //
-        //foreach(IngredientData.IngredientType ingredientType in IngredientData.inputIngredientList)
-        //{
-        //    Debug.Log("입력" + ingredientType);
-        //}
-        //foreach (IngredientData.IngredientType ingredientType in IngredientData.correctIngredientList)
-        //{
-        //    Debug.Log("정답" + ingredientType);
-        //}
-        if (isCorrect)
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        rect.localScale = Vector3.one;
+    }
+
+    public void playCookingAnimation()
+    {
+        Debug.Log(isSuccess);
+        if (isSuccess)
         {
-            foreach (Transform child in cookingSlot.transform)
-            {
-                if (child.CompareTag("Ingredient"))
-                {
-                    Debug.Log("Destroying " + child.name);
-                    child.gameObject.SetActive(false);
-                    //Destroy(child.gameObject);
-                }
-            }
-            //// 이미 자식이 있다면 지움 (선택사항)
-            //foreach (RectTransform child in completeSlot)
-            //{
-            //    Destroy(child.gameObject);
-            //}
-
-            // 완성된 재료 프리팹을 생성해서 completeSlot에 붙임
-            //GameObject newObj = Instantiate(completeIngredientPrefab, completeSlot);
-            //newObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            animator.SetTrigger("Correct");
         }
         else
         {
-            //inputIngredientList.Clear();
-            Debug.Log("?");
+            animator.SetTrigger("Fail");
         }
     }
+
+    public void playFullEmptyAnimation()
+    {
+        Debug.Log(isFull);
+        if (isFull)
+        {
+            animator.SetTrigger("Full");
+        }
+        else
+        {
+            animator.SetTrigger("Empty");
+        }
+    }
+
+    public void playFullAnimation()
+    {
+        animator.Play("Cooking Full");
+    }
+
+    public void playEmptyAnimation()
+    {
+        animator.Play("Cooking Empty");
+    }
+
+    public void setFullEmpty(bool full)
+    {
+        isFull = full;
+    }
+
+    public void setSuccess(bool success)
+    {
+        isSuccess = success;
+    }
+
 }
