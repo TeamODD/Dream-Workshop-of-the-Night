@@ -11,11 +11,13 @@ public class FadeIn : MonoBehaviour
     public Sprite newImage;
     public GameObject startButton;
     public GameObject rulesButton;
+    public GameObject gameOutButton;
     void Start()
     {
         fadeMaterial.SetFloat("_Fade", 0f);
         startButton.SetActive(false);
         rulesButton.SetActive(false);
+        gameOutButton.SetActive(false);
     }
 
     void Update()
@@ -35,6 +37,7 @@ public class FadeIn : MonoBehaviour
             img.sprite = newImage;
             startButton.SetActive(true);
             rulesButton.SetActive(true);
+            gameOutButton.SetActive(true);
         }
     }
 
