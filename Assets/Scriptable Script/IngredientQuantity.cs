@@ -6,4 +6,5 @@ public class IngredientQuantity : ScriptableObject
     public IngredientData ingredient;
     public int minAmount;
     public int maxAmount;
+    public int amount;
 }

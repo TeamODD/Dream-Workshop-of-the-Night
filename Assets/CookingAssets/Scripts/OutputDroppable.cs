@@ -8,6 +8,7 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
     private Image image;
     private RectTransform rect;
     public CookingControl cookingControl;
+    public CustomerDataControl customerDataControl;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
             if(transform.name == "Output")
             {
                 dragged.transform.SetParent(null);
+                customerDataControl.setCharacterImageIndex(1);
                 DontDestroyOnLoad(dragged);
                 SceneManager.LoadScene("CustomerScene");
             }

@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: CustomerA
   m_EditorClassIdentifier: 
   customerName: A
-  characterPrefab: {fileID: 0}
+  characterPrefab:
+  - {fileID: 536962908150268261, guid: 0a4dcc2e70a9c554690aaef826eebe67, type: 3}
+  - {fileID: 9182845223902410355, guid: 4f72c3e7d7548dc488014a7603951c1b, type: 3}
+  characterPrefabIndex: 0
   order:
-    fixedIngredients: []
-    randomingredients: []
+    fixedIngredients:
+    - {fileID: 11400000, guid: 8b5bc1c996e7a734c90dee1e18509d02, type: 2}
+    - {fileID: 11400000, guid: 60b3f42cdfda0db4eaaf726fa096cebd, type: 2}
+    - {fileID: 11400000, guid: 20286a65ace59834795fd225c1710e0f, type: 2}
+    randomingredients:
+    - {fileID: 11400000, guid: c2ff6ed76c88b5347acedaa027572b16, type: 2}
+    - {fileID: 11400000, guid: 1c67e8e17103818408a5406c17437962, type: 2}
+    - {fileID: 11400000, guid: 4ff8d94d2a9313143ba654f93d744a1d, type: 2}

@@ -70,14 +70,14 @@ public class poroto_Game : MonoBehaviour
     void startOnClick2()
     {
         startButton.interactable = false;
-        GameObject go = Instantiate(customers[currentStage].characterPrefab);
+        GameObject go = Instantiate(customers[currentStage].characterPrefab[0]);
         go.transform.SetParent(canvas, worldPositionStays: false);
     }
 
     void fixedbookOnClick()
     {
         fixedIngredient.SetActive(false);
-        GameObject go = Instantiate(customers[currentStage].characterPrefab);
+        GameObject go = Instantiate(customers[currentStage].characterPrefab[0]);
         go.transform.SetParent(canvas, worldPositionStays: false);
         customerclear.SetActive(true);
         customerButton.interactable = true;
