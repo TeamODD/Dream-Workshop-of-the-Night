@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c13e5fe69cd9e964bb080758c9622218, type: 3}
-  m_Name: QuantitySpecial3
+  m_Script: {fileID: 11500000, guid: f56728b6459e5c44a941c6d730895e99, type: 3}
+  m_Name: DataButter
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: c9709b4f38513e54f8e16230a1472d1f, type: 2}
-  minAmount: 0
-  maxAmount: 3
+  ingredient_name: Butter
+  ingredient_amount: 5
+  picture: {fileID: 0}

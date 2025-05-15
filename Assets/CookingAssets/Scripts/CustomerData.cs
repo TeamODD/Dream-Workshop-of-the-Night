@@ -6,6 +6,6 @@ public class CustomerData : ScriptableObject
 {
     public string customerName;
     public List<GameObject> characterPrefab; // 새로 추가
-    public int characterPrefabIndex;
+    public bool customerSpriteChange;
     public Order order;
 }

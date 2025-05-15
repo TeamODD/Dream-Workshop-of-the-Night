@@ -1,9 +1,9 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "IngredientQuantity", menuName = "Scriptable Objects/IngredientQuantity")]
-public class IngredientQuantity : ScriptableObject
+public class RandomIngredientQuantity : ScriptableObject
 {
-    public IngredientData ingredient;
+    public FixIngredientData ingredient;
     public int minAmount;
     public int maxAmount;
     public int amount;

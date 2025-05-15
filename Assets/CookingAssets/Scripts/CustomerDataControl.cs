@@ -5,42 +5,40 @@ using System.Collections.Generic;
 
 public class CustomerDataControl : MonoBehaviour
 {
+    /// <summary>
+    /// 손님 list
+    /// 1스테이지 : A, B, C
+    /// 2스테이지 : D, E, F
+    /// 3스테이지 : G, H, I
+    /// </summary>
     public List<CustomerData> customerData;
-    public List<GameObject> fixIngredintPrefab;
-    public List<GameObject> randomIngredientPrefab;
-    //private CustomerData customerIndex;
-    private int characterImageIndex;
+    /// <summary>
+    /// 손님 외형 전환용 논리 변수
+    /// </summary>
+    private bool customerSpriteChange;
+    /// <summary>
+    /// 현재 정보를 받아온 손님의 인덱스 처리 하기 위한 변수
+    /// </summary>
+
     private void Awake()
     {
-        //Debug.Log(customerData[0].order.fixedIngredients[0].ingredient_amount);
-        //Debug.Log(customerData[0].order.fixedIngredients[1].ingredient_amount);
-        //Debug.Log(customerData[0].order.fixedIngredients[2].ingredient_amount);
-        //Debug.Log(customerData[0].order.randomingredients[0].amount);
-        //Debug.Log(customerData[0].order.randomingredients[1].amount);
-        //Debug.Log(customerData[0].order.randomingredients[2].amount);
-        setFixIngredient();
-        setRandomIngredient();
+        customerSpriteChange = false;
+        customerData[0].customerSpriteChange = false;
     }
 
-    private void setFixIngredient()
+
+    public void changeCustomerSprite(/*bool isCustomerChange*/)
     {
-        for (int i = 0; i < 3; i++)
+        int index = CookingGameManager.Instance.getCookingCustomerIndex();
+        customerSpriteChange = !customerSpriteChange;
+        customerData[index].customerSpriteChange = customerSpriteChange;
+        if (customerSpriteChange)
         {
-            //fixIngredintPrefab[i]
+
         }
-    }
-
-    private void setRandomIngredient()
-    {
-
-    }
-
-    public void setCharacterImageIndex(int index)
-    {
-        if (characterImageIndex == 1)
+        else
         {
-            characterImageIndex = 0;
-            customerData[0].characterPrefabIndex = index;
+
         }
     }
 

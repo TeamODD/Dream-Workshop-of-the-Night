@@ -9,9 +9,9 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
     private Image image;
 
     public CookingControl cookingControl;
-    //public CookingCheck cookingCheck;
+    public CustomerDataControl customerDataControl;
 
-    //public List<IngredientType> selectedIngredients = new();
+    private List<string> ingredientName = new List<string>();
 
     private void Awake()
     {
@@ -39,21 +39,12 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
         {
             if (transform.name == "Cooking Slot")
             {
-                //cookingControl.setFullEmpty(true);
                 cookingControl.playFullAnimation();
                 dropped.transform.SetParent(transform);
                 dropped.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
                 Debug.Log("드롭 성공!");
                 dropped.SetActive(false);
-                JunIngredientData ingredientData = dropped.GetComponent<JunIngredientData>();
-                if (ingredientData != null)
-                {
-                    Debug.Log(ingredientData.ingredientType);
-                    CookingCheck.inputIngredientList.Add(ingredientData.ingredientType);
-                    //cookingCheck.inputIngredientList.Add(ingredientData.ingredientType);
-                    //selectedIngredients.Add(ingredientData.ingredientType);
-                    //cookingCheck.setInputIngredientList(ingredientData.ingredientType);
-                }
+                inputIngredient(dropped.name);
             }
 
             CanvasGroup group = dropped.GetComponent<CanvasGroup>();
@@ -65,5 +56,43 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
 
 
         }
+    }
+
+    private void inputIngredient(string name)
+    {
+        if (name == "Sugar(Clone)")
+        {
+            ingredientName.Add("Sugar");
+        }
+        else if (name == "Butter(Clone)")
+        {
+            ingredientName.Add("Butter");
+        }
+        else if (name == "Egg(Clone)")
+        {
+            ingredientName.Add("Egg");
+        }
+        else if (name == "Special1(Clone)")
+        {
+            ingredientName.Add("Special1");
+        }
+        else if (name == "Special2(Clone)")
+        {
+            ingredientName.Add("Special2");
+        }
+        else if (name == "Special3(Clone)")
+        {
+            ingredientName.Add("Special3");
+        }
+    }
+
+    public List<string> getIngredientName()
+    {
+        return ingredientName;
+    }
+
+    public void setIngredientClear()
+    {
+        ingredientName.Clear();
     }
 }

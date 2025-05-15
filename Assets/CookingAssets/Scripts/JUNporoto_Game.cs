@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
-public class poroto_Game : MonoBehaviour
+public class JUNporoto_Game : MonoBehaviour
 {
     public List<CustomerData> customers;
     public GameObject fixedIngredient;
