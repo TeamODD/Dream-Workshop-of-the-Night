@@ -8,6 +8,8 @@ public class OutputDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private RectTransform rect;
     private CanvasGroup canvasGroup;
 
+    private Vector2 originalAnchoredPosition;
+
     private void Awake()
     {
         canvas = FindObjectOfType<Canvas>().transform;
@@ -18,10 +20,10 @@ public class OutputDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void OnBeginDrag(PointerEventData eventData)
     {
         previousParent = transform.parent;
+        originalAnchoredPosition = rect.anchoredPosition;
 
         transform.SetParent(canvas);
         transform.SetAsLastSibling();
-
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
     }
@@ -33,11 +35,8 @@ public class OutputDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if(transform.parent == canvas)
-        {
-            transform.SetParent(previousParent);
-            rect.position = previousParent.GetComponent<RectTransform>().position;
-        }
+        transform.SetParent(previousParent);
+        rect.anchoredPosition = originalAnchoredPosition;
 
         canvasGroup.alpha = 1.0f;
         canvasGroup.blocksRaycasts = true;
