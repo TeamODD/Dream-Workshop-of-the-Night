@@ -42,6 +42,7 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
                 dragged.transform.SetParent(null);
                 //CookingGameManager.Instance.setCookingSceneIndex();
                 customerDataControl.changeCustomerSprite();
+                Destroy(dragged);
                 if(CookingGameManager.cookingSceneChange == 1)
                 {
                 SceneManager.LoadScene("CTEasy");

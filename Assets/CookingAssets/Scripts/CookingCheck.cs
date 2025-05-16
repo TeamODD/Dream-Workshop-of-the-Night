@@ -70,6 +70,8 @@ public class CookingCheck : MonoBehaviour
     /// </summary>
     public IngredientDroppable ingredientDroppable;
 
+    public List<Sprite> completeFoodSprites;
+
     private void Awake()
     {
         // 컴포넌트 연결
@@ -275,6 +277,7 @@ public class CookingCheck : MonoBehaviour
             {
                 // 완성된 재료 프리팹을 생성해서 completeSlot에 붙임
                 Debug.Log("요리 완성");
+                completeIngredientPrefab.gameObject.GetComponent<Image>().sprite = completeFoodSprites[CookingGameManager.cookingCustomerIndex];
             }
 
             else
