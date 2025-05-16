@@ -13,4 +13,8 @@ public class RulesButton : MonoBehaviour
     {
         RulesPanel.SetActive (true);
     }
+    public void selectExit()
+    {
+        RulesPanel.SetActive (false);
+    }
 }
