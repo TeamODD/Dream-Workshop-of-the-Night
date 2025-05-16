@@ -32,7 +32,7 @@ public class CookingCheck : MonoBehaviour
     /// <summary>
     /// 요리 완성 쟁반 가리는 시간
     /// </summary>
-    public float fadeDuration = 3f;
+    public float fadeDuration = 1.5f;
     /// <summary>
     /// 패널 alpha 값 변경하기 위한 객체
     /// </summary>
@@ -118,7 +118,7 @@ public class CookingCheck : MonoBehaviour
             // 어떤 레시피 재료 들어왔는지 확인
             foreach (FixIngredientData ingredientData1 in correctFixIngredientList)
             {
-                Debug.Log(ingredientData1.ingredient_name);
+                Debug.Log(ingredientData1.ingredient_amount);
             }
         }
     }
@@ -186,50 +186,70 @@ public class CookingCheck : MonoBehaviour
         int correctCount = 0;
         bool check = false;
         int i = 0;
+        int k = 0;
+        bool iFlag = true;
+        bool kFlag = true;
         while (true)
         {
-            Debug.Log("고정 가짓수" + correctFixIngredientList.Count+", 랜덤 가짓수" + correctRandomIngredientList.Count);
+            Debug.Log("고정 가짓수" + correctFixIngredientList.Count + ", 랜덤 가짓수" + correctRandomIngredientList.Count);
+            if (iFlag == false && kFlag == false)
+            {
+                if (correctCount == correctFixIngredientList.Count + correctRandomIngredientList.Count)
+                {
+                    check = true;
+                    break;
+                }
+                else
+                {
+                    check = false;
+                    break;
+                }
+            }
+            if (i >= correctFixIngredientList.Count)
+            {
+                iFlag = false;
+            }
+            if (k >= correctRandomIngredientList.Count)
+            {
+                kFlag = false;
+            }
 
-            if (correctCount == correctFixIngredientList.Count + correctRandomIngredientList.Count)
+            if (iFlag)
             {
-                check = true;
-                break;
-            }
-            else if(i >= correctFixIngredientList.Count || i >= correctRandomIngredientList.Count)
-            {
-                check = false;
-                break;
-            }
-            
-            if (ingredientDropName.Contains(correctFixIngredientList[i].ingredient_name))
-            {
-                string containName = correctFixIngredientList[i].ingredient_name;
-                int containCount = 0;
-                for (int j = 0; j < ingredientDropName.Count; j++)
+                if (ingredientDropName.Contains(correctFixIngredientList[i].ingredient_name))
                 {
-                    if (containName == ingredientDropName[j])
-                        containCount++;
-                }
-                if (containCount == correctFixIngredientList[i].ingredient_amount)
-                {
-                    correctCount++;
+                    string containName = correctFixIngredientList[i].ingredient_name;
+                    int containCount = 0;
+                    for (int j = 0; j < ingredientDropName.Count; j++)
+                    {
+                        if (containName == ingredientDropName[j])
+                            containCount++;
+                    }
+                    if (containCount == correctFixIngredientList[i].ingredient_amount)
+                    {
+                        correctCount++;
+                    }
                 }
             }
-            if (ingredientDropName.Contains(correctRandomIngredientList[i].ingredient.ingredient_name))
+            if (kFlag)
             {
-                string containName = correctRandomIngredientList[i].ingredient.ingredient_name;
-                int containCount = 0;
-                for (int j = 0; j < ingredientDropName.Count; j++)
+                if (ingredientDropName.Contains(correctRandomIngredientList[k].ingredient.ingredient_name))
                 {
-                    if (containName == ingredientDropName[j])
-                        containCount++;
-                }
-                if (containCount == correctRandomIngredientList[i].amount)
-                {
-                    correctCount++;
+                    string containName = correctRandomIngredientList[k].ingredient.ingredient_name;
+                    int containCount = 0;
+                    for (int j = 0; j < ingredientDropName.Count; j++)
+                    {
+                        if (containName == ingredientDropName[j])
+                            containCount++;
+                    }
+                    if (containCount == correctRandomIngredientList[k].amount)
+                    {
+                        correctCount++;
+                    }
                 }
             }
             i++;
+            k++;
         }
         return check;
     }

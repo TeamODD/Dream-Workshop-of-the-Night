@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b71c3ee5a293064dacd3a3f73e04b3d, type: 3}
+  m_Name: Customer9
+  m_EditorClassIdentifier: 
+  customerName: I
+  characterPrefab:
+  - {fileID: 6938612998920017251, guid: fec7a65175f92ae48a7c50dfb7c228da, type: 3}
+  - {fileID: 537725980780107634, guid: a07ecac681ac4a9419f07a9e239e1c03, type: 3}
+  customerSpriteChange: 0
+  order:
+    fixedIngredients:
+    - {fileID: 11400000, guid: b7b11deef1801734e80ad9e30e691433, type: 2}
+    - {fileID: 11400000, guid: 6cea3fafe4cc1eb45ae412f0a0b5e79c, type: 2}
+    - {fileID: 11400000, guid: c77256d83820bb541bbcff4cf5a51223, type: 2}
+    randomingredients:
+    - {fileID: 11400000, guid: 23f0e439e2f6d394f8d33400fe468f51, type: 2}
+    - {fileID: 11400000, guid: 96d04387e8f9af8448b5191e026f524b, type: 2}
+    - {fileID: 11400000, guid: 41de4205a13cd71478b53d462d49d162, type: 2}

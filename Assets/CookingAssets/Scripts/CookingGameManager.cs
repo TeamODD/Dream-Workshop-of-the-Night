@@ -30,7 +30,7 @@ public class CookingGameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        cookingCustomerIndex = 2;
+        cookingCustomerIndex = 5;
     }
 
     public void setCookingCustomerIndex()

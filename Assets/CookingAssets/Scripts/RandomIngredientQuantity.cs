@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "IngredientQuantity", menuName = "Scriptable Objects/IngredientQuantity")]
+[CreateAssetMenu(fileName = "RandomIngredientQuantity", menuName = "Scriptable Objects/RandomIngredientQuantity")]
 public class RandomIngredientQuantity : ScriptableObject
 {
     public FixIngredientData ingredient;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "IngredientData", menuName = "Scriptable Objects/IngredientData")]
+[CreateAssetMenu(fileName = "FixIngredientData", menuName = "Scriptable Objects/FixIngredientData")]
 public class FixIngredientData : ScriptableObject
 {
     public string ingredient_name;

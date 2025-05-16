@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b71c3ee5a293064dacd3a3f73e04b3d, type: 3}
+  m_Name: Customer5
+  m_EditorClassIdentifier: 
+  customerName: E
+  characterPrefab:
+  - {fileID: 6938612998920017251, guid: ba73ca9b00d417d4f89363b4089637c1, type: 3}
+  - {fileID: 537725980780107634, guid: e8852bb00a2d0e04fbadfb6caed96d67, type: 3}
+  customerSpriteChange: 0
+  order:
+    fixedIngredients:
+    - {fileID: 11400000, guid: 3d6f9b2e56c0d8340a61e2d5d8e22ce6, type: 2}
+    - {fileID: 11400000, guid: b7849b6efc751fd499e0a3450df31566, type: 2}
+    - {fileID: 11400000, guid: 1ad67a7b0c9ec14438a8598113de6d37, type: 2}
+    randomingredients:
+    - {fileID: 11400000, guid: 9bafcaf52eab5304c91c4ab3cd0b540e, type: 2}
+    - {fileID: 11400000, guid: 02e451c6a489ac646af4eddba57f5996, type: 2}

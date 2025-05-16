@@ -62,26 +62,32 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
     {
         if (name == "SugarOne(Clone)")
         {
+            Debug.Log("들어간재료" + name);
             ingredientName.Add("Sugar");
         }
         else if (name == "ButterOne(Clone)")
         {
+            Debug.Log("들어간재료" + name);
             ingredientName.Add("Butter");
         }
         else if (name == "EggOne(Clone)")
         {
+            Debug.Log("들어간재료" + name);
             ingredientName.Add("Egg");
         }
         else if (name == "Special1One(Clone)")
         {
+            Debug.Log("들어간재료" + name);
             ingredientName.Add("Special1");
         }
         else if (name == "Special2One(Clone)")
         {
+            Debug.Log("들어간재료" + name);
             ingredientName.Add("Special2");
         }
         else if (name == "Special3One(Clone)")
         {
+            Debug.Log("들어간재료" + name);
             ingredientName.Add("Special3");
         }
     }
