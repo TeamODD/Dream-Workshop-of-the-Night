@@ -17,6 +17,7 @@ public class CookingGameManager : MonoBehaviour
     }
 
     public static int cookingCustomerIndex = 0;
+    public static int cookingSceneCustomerIndex = 1;
     public static int cookingSceneChange = 1;
 
     private void Awake()
@@ -46,6 +47,6 @@ public class CookingGameManager : MonoBehaviour
     }
     public int getCookingCustomerIndex()
     {
-        return cookingCustomerIndex;
+        return cookingSceneCustomerIndex;
     }
 }

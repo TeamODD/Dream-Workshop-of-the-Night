@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DataButter
   m_EditorClassIdentifier: 
   ingredient_name: Butter
-  ingredient_amount: 2
+  ingredient_amount: 1
   picture: {fileID: 2954658567337765027, guid: 194d5d67a0584154b8e413e2ce0d6203, type: 3}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class gameclearmessage : MonoBehaviour
 {
@@ -17,8 +18,16 @@ public class gameclearmessage : MonoBehaviour
         if (CookingGameManager.cookingCustomerIndex == 4)
         {
             clearpanel.SetActive(true);
+            Invoke("LoadSelect", 3f);
+            PlayerPrefs.SetInt("EasyClear", 1);
+            PlayerPrefs.Save();
             CookingGameManager.cookingCustomerIndex = 0;
             CookingGameManager.cookingSceneChange++;
         }
+    }
+
+    void LoadSelect()
+    {
+        SceneManager.LoadScene("SelectLevel");
     }
 }

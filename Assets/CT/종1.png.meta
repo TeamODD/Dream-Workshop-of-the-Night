@@ -1,13 +1,28 @@
 fileFormatVersion: 2
-guid: 9ef5b01f4ad654c4fb12db8d5118017f
+guid: b9b349e2552826a4b9765221716db2e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8383204588235627179
-    second: recipepaper_0
+      213: -5837317083426673744
+    second: "\uC8851_0"
   - first:
-      213: 7741821714608566805
-    second: recipepaper_1
+      213: -8472817940502386490
+    second: "\uC8851_1"
+  - first:
+      213: -1124391520304085827
+    second: "\uC8851_2"
+  - first:
+      213: -5906143865054978747
+    second: "\uC8851_3"
+  - first:
+      213: -1292750830567962380
+    second: "\uC8851_4"
+  - first:
+      213: 8259608185782695082
+    second: "\uC8851_5"
+  - first:
+      213: 1092728135658816985
+    second: "\uC8851_6"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,32 +128,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -155,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: recipepaper_0
+      name: "\uC8851_0"
       rect:
         serializedVersion: 2
-        x: 111
-        y: 599
-        width: 10
-        height: 19
+        x: 109
+        y: 119
+        width: 560
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5556ac6d7dfd8ab80800000000000000
-      internalID: -8383204588235627179
+      spriteID: 0bba8014a0fadfea0800000000000000
+      internalID: -5837317083426673744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recipepaper_1
+      name: "\uC8851_1"
       rect:
         serializedVersion: 2
-        x: 129
-        y: 24
-        width: 579
-        height: 702
+        x: 249
+        y: 616
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +181,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51236add4d9707b60800000000000000
-      internalID: 7741821714608566805
+      spriteID: 6c86cc959f08a6a80800000000000000
+      internalID: -8472817940502386490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uC8851_2"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 608
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db440db9edb5560f0800000000000000
+      internalID: -1124391520304085827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uC8851_3"
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 515
+        width: 81
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d9b036279290ea0800000000000000
+      internalID: -5906143865054978747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uC8851_4"
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 431
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8c7e808f93f0ee0800000000000000
+      internalID: -1292750830567962380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uC8851_5"
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 417
+        width: 59
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa47c7932e500a270800000000000000
+      internalID: 8259608185782695082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uC8851_6"
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 371
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5c40a23762a2f00800000000000000
+      internalID: 1092728135658816985
       vertices: []
       indices: 
       edges: []
@@ -211,9 +310,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      recipepaper_0: -8383204588235627179
-      recipepaper_1: 7741821714608566805
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

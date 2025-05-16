@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DataSugar
   m_EditorClassIdentifier: 
   ingredient_name: Sugar
-  ingredient_amount: 3
+  ingredient_amount: 1
   picture: {fileID: -1829740662582931435, guid: d12cf97723b7a8341b7c303efb37701a, type: 3}
