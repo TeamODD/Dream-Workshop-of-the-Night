@@ -16,6 +16,8 @@ public class CookingGameManager : MonoBehaviour
         }
     }
 
+    public static int cookingCustomerIndex;
+
     private void Awake()
     {
         if (instance == null)
@@ -28,28 +30,16 @@ public class CookingGameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        cookingCustomerIndex = 0;
     }
 
-    public Image progressImage;
-    public float duration = 40f; // 한 바퀴 도는 데 걸리는 시간 (초)
-    private float elapsed = 0f;
-
-    void Start()
+    public void setCookingCustomerIndex()
     {
-        //timer = duration;
+        cookingCustomerIndex++;
     }
 
-    void Update()
+    public int getCookingCustomerIndex()
     {
-        if (elapsed < duration)
-        {
-            elapsed += Time.deltaTime;
-
-            float angle = (elapsed/ duration) * 360f;
-
-            // Z축으로 회전 (2D 시계바늘 기준)
-            progressImage.rectTransform.localEulerAngles = new Vector3(0f, 0f, -(-18f+angle));
-        }
+        return cookingCustomerIndex;
     }
-
 }

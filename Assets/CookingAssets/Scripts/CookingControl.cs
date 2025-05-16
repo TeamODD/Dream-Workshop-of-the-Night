@@ -14,7 +14,6 @@ public class CookingControl : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     private bool isSuccess;
     private bool isFull;
 
-    //public CookingCheck cookingCheck;
     public Animator animator;
     private void Awake()
     {
@@ -35,7 +34,7 @@ public class CookingControl : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void playCookingAnimation()
     {
-        Debug.Log(isSuccess);
+        Debug.Log("성공 여부" + isSuccess+", isFull : "+isFull);
         if (isFull)
         {
             if (isSuccess)
@@ -46,19 +45,6 @@ public class CookingControl : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             {
                 animator.SetTrigger("Fail");
             }
-        }
-    }
-
-    public void playFullEmptyAnimation()
-    {
-        Debug.Log(isFull);
-        if (isFull)
-        {
-            animator.SetTrigger("Full");
-        }
-        else
-        {
-            animator.SetTrigger("Empty");
         }
     }
 

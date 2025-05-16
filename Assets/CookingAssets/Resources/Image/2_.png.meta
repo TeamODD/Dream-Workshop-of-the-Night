@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1e52e7d100c1480469d15858c56cfc4e
+guid: 3edff528bc1a33a42b5284c038f7e768
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6571001256543255774
-    second: startC_0
+      213: -8234593756188668594
+    second: 2__0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,32 +110,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -152,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: startC_0
+      name: 2__0
       rect:
         serializedVersion: 2
-        x: 1439
-        y: 403
-        width: 346
-        height: 209
+        x: 110
+        y: 0
+        width: 761
+        height: 1235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 223081dfb2d1fc4a0800000000000000
-      internalID: -6571001256543255774
+      spriteID: e4d89b48b98d8bd80800000000000000
+      internalID: -8234593756188668594
       vertices: []
       indices: 
       edges: []
@@ -187,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      startC_0: -6571001256543255774
+      2__0: -8234593756188668594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

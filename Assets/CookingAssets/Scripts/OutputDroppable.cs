@@ -7,6 +7,8 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
 {
     private Image image;
     private RectTransform rect;
+    public CookingControl cookingControl;
+    public CustomerDataControl customerDataControl;
 
     private void Awake()
     {
@@ -35,16 +37,18 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
         if(eventData.pointerDrag != null)
         {
             GameObject dragged = eventData.pointerDrag;
-            if(transform.name == "Output")
+            if(transform.name == "Output" && eventData.pointerDrag.name != "Cooking Slot")
             {
                 dragged.transform.SetParent(null);
+                CookingGameManager.Instance.setCookingCustomerIndex();
+                customerDataControl.changeCustomerSprite();
                 DontDestroyOnLoad(dragged);
-                SceneManager.LoadScene("CustomerScene");
+                SceneManager.LoadScene("RecipeScene");
             }
             else if (transform.name == "Trash Can")
             {
                 Debug.Log("쓰레기통으로 슛");
-                Destroy(dragged);
+                cookingControl.playEmptyAnimation();
             }
         }
     }
