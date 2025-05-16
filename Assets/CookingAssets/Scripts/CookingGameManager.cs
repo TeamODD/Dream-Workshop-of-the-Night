@@ -30,12 +30,19 @@ public class CookingGameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        cookingCustomerIndex = 0;
+        cookingCustomerIndex = 2;
     }
 
     public void setCookingCustomerIndex()
     {
-        cookingCustomerIndex++;
+        if (cookingCustomerIndex < 8)
+        {
+            cookingCustomerIndex++;
+        }
+        else if (cookingCustomerIndex == 8)
+        {
+            cookingCustomerIndex = 0;
+        }
     }
 
     public int getCookingCustomerIndex()

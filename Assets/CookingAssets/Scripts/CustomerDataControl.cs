@@ -16,14 +16,11 @@ public class CustomerDataControl : MonoBehaviour
     /// 손님 외형 전환용 논리 변수
     /// </summary>
     private bool customerSpriteChange;
-    /// <summary>
-    /// 현재 정보를 받아온 손님의 인덱스 처리 하기 위한 변수
-    /// </summary>
 
-    private void Awake()
+    private void Start()
     {
         customerSpriteChange = false;
-        customerData[0].customerSpriteChange = false;
+        customerData[CookingGameManager.Instance.getCookingCustomerIndex()].customerSpriteChange = false;
     }
 
 
@@ -31,6 +28,7 @@ public class CustomerDataControl : MonoBehaviour
     {
         int index = CookingGameManager.Instance.getCookingCustomerIndex();
         customerSpriteChange = !customerSpriteChange;
+        Debug.Log(index);
         customerData[index].customerSpriteChange = customerSpriteChange;
         if (customerSpriteChange)
         {

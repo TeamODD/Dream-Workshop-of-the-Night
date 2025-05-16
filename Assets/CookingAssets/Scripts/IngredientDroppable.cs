@@ -60,27 +60,27 @@ public class IngredientDroppable : MonoBehaviour, IDropHandler, IPointerEnterHan
 
     private void inputIngredient(string name)
     {
-        if (name == "Sugar(Clone)")
+        if (name == "SugarOne(Clone)")
         {
             ingredientName.Add("Sugar");
         }
-        else if (name == "Butter(Clone)")
+        else if (name == "ButterOne(Clone)")
         {
             ingredientName.Add("Butter");
         }
-        else if (name == "Egg(Clone)")
+        else if (name == "EggOne(Clone)")
         {
             ingredientName.Add("Egg");
         }
-        else if (name == "Special1(Clone)")
+        else if (name == "Special1One(Clone)")
         {
             ingredientName.Add("Special1");
         }
-        else if (name == "Special2(Clone)")
+        else if (name == "Special2One(Clone)")
         {
             ingredientName.Add("Special2");
         }
-        else if (name == "Special3(Clone)")
+        else if (name == "Special3One(Clone)")
         {
             ingredientName.Add("Special3");
         }
