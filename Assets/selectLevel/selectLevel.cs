@@ -5,7 +5,7 @@ public class selectLevel : MonoBehaviour
 {
     public void SelectEasy()
     {
-        SceneManager.LoadScene("CT");
+        SceneManager.LoadScene("CTEasy");
     }
     public void SelectNormal()
     {
