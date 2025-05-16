@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db08d314e645274eb2a2a89e799ea2d, type: 3}
+  m_Name: IngredientQuantity1
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 97af67e996f3bfd4782eacd826a294dc, type: 2}
+  minAmount: 1
+  maxAmount: 2
+  Amount: 0

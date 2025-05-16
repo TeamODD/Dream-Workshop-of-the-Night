@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afed833e8109cc418b715b5343c5734, type: 3}
+  m_Name: CustomerData1
+  m_EditorClassIdentifier: 
+  customerName: 
+  characterPrefab: {fileID: 7900314838965379283, guid: 407c24dc41eb0d94aa8f36ad2577129b, type: 3}
+  order:
+    fixedIngredients:
+    - {fileID: 11400000, guid: 31b2ccc468cec9544a2ebb8029fc106c, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    randomingredients:
+    - {fileID: 11400000, guid: d50779f463f567b4593d3b7e0af2c04c, type: 2}

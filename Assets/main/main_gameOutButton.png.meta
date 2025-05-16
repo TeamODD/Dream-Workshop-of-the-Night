@@ -373,7 +373,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      main_gameOutButton_0: -2359263396211053902
+      main_gameOutButton_1: 4148475493503675745
+      main_gameOutButton_2: -2146918502002182998
+      main_gameOutButton_3: 8130935583940056768
+      main_gameOutButton_4: 2524613007056243953
+      main_gameOutButton_5: 7366775623406570199
+      main_gameOutButton_6: 7681968268453487751
+      main_gameOutButton_7: 3083236288502688640
+      main_gameOutButton_8: 3808989813238166297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
