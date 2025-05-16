@@ -15,4 +15,4 @@ MonoBehaviour:
   ingredient: {fileID: 11400000, guid: 0e713decdc999f640b9ced997e257edc, type: 2}
   minAmount: 0
   maxAmount: 5
-  amount: 2
+  amount: 3

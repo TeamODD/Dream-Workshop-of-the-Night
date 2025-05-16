@@ -16,7 +16,7 @@ MonoBehaviour:
   characterPrefab:
   - {fileID: 6337754355447506468, guid: f522ead854ac9894c9f0b5d0953eedd3, type: 3}
   - {fileID: 4363310023935958245, guid: 4b0c36fa7c16f4c4e8b9bfcbc52ec3a3, type: 3}
-  customerSpriteChange: 0
+  customerSpriteChange: 1
   order:
     fixedIngredients:
     - {fileID: 11400000, guid: df4e236af07b1d94581c2a94171a80a1, type: 2}
