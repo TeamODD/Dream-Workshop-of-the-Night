@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 97fbaff7a55847546a63ed3fa1de04c3
+guid: 4f0687146baf12445922a152ca350a61
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -27307904797611606
-    second: HowToPlay_0
+      213: -5936761273523494569
+    second: Stage2_1_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HowToPlay_0
+      name: Stage2_1_1_0
       rect:
         serializedVersion: 2
-        x: 178
-        y: 14
-        width: 1558
-        height: 1051
+        x: 99
+        y: 0
+        width: 857
+        height: 1446
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa96af2fa9bfe9ff0800000000000000
-      internalID: -27307904797611606
+      spriteID: 751265773136c9da0800000000000000
+      internalID: -5936761273523494569
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      HowToPlay_0: -27307904797611606
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

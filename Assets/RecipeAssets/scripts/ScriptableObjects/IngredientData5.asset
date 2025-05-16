@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e091427cd7956f14dad349d7cabdfece, type: 3}
   m_Name: IngredientData5
   m_EditorClassIdentifier: 
-  ingredient_name: 
+  ingredient_name: Rand2
   ingredient_amount: 0
   picture: {fileID: 0}

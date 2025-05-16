@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: e8c52c3ad388bcf4ba97c723f6e8cf61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -645250311569183658
+    second: Rnad2IMG_0
+  - first:
+      213: 5464255002308168262
+    second: Rnad2IMG_1
+  - first:
+      213: -1816127363796954785
+    second: Rnad2IMG_2
+  - first:
+      213: -6445591087788183005
+    second: Rnad2IMG_3
+  - first:
+      213: 5484113761361155035
+    second: Rnad2IMG_4
+  - first:
+      213: 1880305252496383968
+    second: Rnad2IMG_5
+  - first:
+      213: -801888303728783609
+    second: Rnad2IMG_6
+  - first:
+      213: -231978536086014786
+    second: Rnad2IMG_7
+  - first:
+      213: -4615493659515437626
+    second: Rnad2IMG_8
+  - first:
+      213: -7360052236668150737
+    second: Rnad2IMG_9
+  - first:
+      213: -5776512817406078132
+    second: Rnad2IMG_10
+  - first:
+      213: -1989264645332848052
+    second: Rnad2IMG_11
+  - first:
+      213: 1456411892884740329
+    second: Rnad2IMG_12
+  - first:
+      213: -7601818027812067607
+    second: Rnad2IMG_13
+  - first:
+      213: 6086385886351426263
+    second: Rnad2IMG_14
+  - first:
+      213: -2441512618007672154
+    second: Rnad2IMG_15
+  - first:
+      213: 6659793930803356904
+    second: Rnad2IMG_16
+  - first:
+      213: 3052264566596598496
+    second: Rnad2IMG_17
+  - first:
+      213: -3864552497638071475
+    second: Rnad2IMG_18
+  - first:
+      213: 329365392833568153
+    second: Rnad2IMG_19
+  - first:
+      213: 7686638335553711270
+    second: Rnad2IMG_20
+  - first:
+      213: 8141482984521049224
+    second: Rnad2IMG_21
+  - first:
+      213: 83736339522151801
+    second: Rnad2IMG_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rnad2IMG_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 595
+        width: 108
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c65b3a24c9b07f0800000000000000
+      internalID: -645250311569183658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 591
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64acab649fee4db40800000000000000
+      internalID: 5464255002308168262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 580
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51140ee8c1dbc6e0800000000000000
+      internalID: -1816127363796954785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 584
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32236fc4e09ac86a0800000000000000
+      internalID: -6445591087788183005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 205
+        width: 412
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd353cde86c7b1c40800000000000000
+      internalID: 5484113761361155035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 552
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef19543aaf281a10800000000000000
+      internalID: 1880305252496383968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 545
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f84ba16de1fd4f0800000000000000
+      internalID: -801888303728783609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_7
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 513
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4f31120c8d7ccf0800000000000000
+      internalID: -231978536086014786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 182
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdb38978f872ffb0800000000000000
+      internalID: -4615493659515437626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_9
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 171
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c53196c77dbd990800000000000000
+      internalID: -7360052236668150737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_10
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 69
+        width: 129
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c431506a234b5dfa0800000000000000
+      internalID: -5776512817406078132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_11
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 101
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4231ba3856b464e0800000000000000
+      internalID: -1989264645332848052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_12
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 84
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e89c0276e6363410800000000000000
+      internalID: 1456411892884740329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_13
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6e915a7cae08690800000000000000
+      internalID: -7601818027812067607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_14
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 83
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d28de177bf277450800000000000000
+      internalID: 6086385886351426263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_15
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aac409a5310e1ed0800000000000000
+      internalID: -2441512618007672154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_16
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 73
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e426d28b475c6c50800000000000000
+      internalID: 6659793930803356904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_17
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea7084a372db5a20800000000000000
+      internalID: 3052264566596598496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_18
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 69
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d432f6a8af95e5ac0800000000000000
+      internalID: -3864552497638071475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99dd6296414229400800000000000000
+      internalID: 329365392833568153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_20
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 73
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac249337dc6caa60800000000000000
+      internalID: 7686638335553711270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_21
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 69
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884a34593ab5cf070800000000000000
+      internalID: 8141482984521049224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rnad2IMG_22
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9756204d1cd792100800000000000000
+      internalID: 83736339522151801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rnad2IMG_0: -645250311569183658
+      Rnad2IMG_1: 5464255002308168262
+      Rnad2IMG_10: -5776512817406078132
+      Rnad2IMG_11: -1989264645332848052
+      Rnad2IMG_12: 1456411892884740329
+      Rnad2IMG_13: -7601818027812067607
+      Rnad2IMG_14: 6086385886351426263
+      Rnad2IMG_15: -2441512618007672154
+      Rnad2IMG_16: 6659793930803356904
+      Rnad2IMG_17: 3052264566596598496
+      Rnad2IMG_18: -3864552497638071475
+      Rnad2IMG_19: 329365392833568153
+      Rnad2IMG_2: -1816127363796954785
+      Rnad2IMG_20: 7686638335553711270
+      Rnad2IMG_21: 8141482984521049224
+      Rnad2IMG_22: 83736339522151801
+      Rnad2IMG_3: -6445591087788183005
+      Rnad2IMG_4: 5484113761361155035
+      Rnad2IMG_5: 1880305252496383968
+      Rnad2IMG_6: -801888303728783609
+      Rnad2IMG_7: -231978536086014786
+      Rnad2IMG_8: -4615493659515437626
+      Rnad2IMG_9: -7360052236668150737
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

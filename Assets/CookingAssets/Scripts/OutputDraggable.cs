@@ -12,7 +12,7 @@ public class OutputDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     private void Awake()
     {
-        canvas = FindObjectOfType<Canvas>().transform;
+        canvas = UnityEngine.Object.FindAnyObjectByType<Canvas>().transform;
         rect = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 97fbaff7a55847546a63ed3fa1de04c3
+guid: d5cf8e92e41835f46991ba69a336168a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -27307904797611606
-    second: HowToPlay_0
+      213: 5311422798150937051
+    second: EGGIMG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HowToPlay_0
+      name: EGGIMG_0
       rect:
         serializedVersion: 2
-        x: 178
-        y: 14
-        width: 1558
-        height: 1051
+        x: 173
+        y: 83
+        width: 449
+        height: 598
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa96af2fa9bfe9ff0800000000000000
-      internalID: -27307904797611606
+      spriteID: bd9a2bfc4e6f5b940800000000000000
+      internalID: 5311422798150937051
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      HowToPlay_0: -27307904797611606
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

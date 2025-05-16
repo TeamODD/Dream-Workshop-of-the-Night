@@ -20,6 +20,6 @@ public class OneTimeButton : MonoBehaviour
         Debug.Log("처음 한 번만 실행됨!");
 
         // 여기에 원하는 동작 추가
-        GameManager.Instance.OnFixedRecipeHidden(); 
+        //GameManager.Instance.OnFixedRecipeHidden(); 
     }
 }

@@ -14,6 +14,8 @@ public class poroto_Game : MonoBehaviour
     public Button startButton;
     public Button customerButton;
 
+
+
     private float fixedIngredient1;
     private float fixedIngredient2;
     private float fixedIngredient3;
@@ -22,7 +24,9 @@ public class poroto_Game : MonoBehaviour
 
     void Start()
     {
-       
+       fixedIngredient.SetActive(false);
+        randomIngredient.SetActive(false);
+        customerclear.SetActive(false);
 
         startButton.interactable = true;
         customerButton.interactable = false;

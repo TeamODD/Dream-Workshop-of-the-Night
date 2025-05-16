@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Movemanager : MonoBehaviour
+public class MoveManager : MonoBehaviour
 {
     public Button you;
     public GameObject we;
@@ -12,8 +12,6 @@ public class Movemanager : MonoBehaviour
         you.onClick.AddListener(MoveUp);
 
     }
-
-
     // Update is called once per frame
 
     void MoveUp()
@@ -23,6 +21,5 @@ public class Movemanager : MonoBehaviour
             transform.position.y + 20f,
             we.transform.position.z
         );
-
-        }
     }
+}
