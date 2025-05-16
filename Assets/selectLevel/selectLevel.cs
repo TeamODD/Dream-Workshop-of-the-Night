@@ -5,14 +5,14 @@ public class selectLevel : MonoBehaviour
 {
     public void SelectEasy()
     {
-        SceneManager.LoadScene("Easy_customer");
+        SceneManager.LoadScene("CT");
     }
     public void SelectNormal()
     {
-        SceneManager.LoadScene("Normal_customer");
+        SceneManager.LoadScene("CTNormal");
     }
     public void SelectHard()
     {
-        SceneManager.LoadScene("Hard_customer");
+        SceneManager.LoadScene("CTHard");
     }
 }

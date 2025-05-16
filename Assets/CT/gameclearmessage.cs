@@ -9,10 +9,16 @@ public class gameclearmessage : MonoBehaviour
     }
     void Update()
     {
-        if (recipeUP.customerNum == 4)
+        //if (recipeUP.customerNum == 4)
+        //{
+        //    clearpanel.SetActive(true);
+        //    recipeUP.customerNum = 0;
+        //}
+        if (CookingGameManager.cookingCustomerIndex == 4)
         {
             clearpanel.SetActive(true);
-            recipeUP.customerNum = 0;
+            CookingGameManager.cookingCustomerIndex = 0;
+            CookingGameManager.cookingSceneChange++;
         }
     }
 }

@@ -4,7 +4,7 @@ public class RetryButton : MonoBehaviour
 {
     public void selectRetry()
     {
-        SceneManager.LoadScene("Easy_customer");
+        SceneManager.LoadScene("SelectLevel");
     }
     
 }

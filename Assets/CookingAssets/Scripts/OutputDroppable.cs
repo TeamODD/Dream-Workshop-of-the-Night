@@ -40,10 +40,20 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
             if(transform.name == "Output" && eventData.pointerDrag.name != "Cooking Slot")
             {
                 dragged.transform.SetParent(null);
-                CookingGameManager.Instance.setCookingCustomerIndex();
+                //CookingGameManager.Instance.setCookingSceneIndex();
                 customerDataControl.changeCustomerSprite();
-                DontDestroyOnLoad(dragged);
-                SceneManager.LoadScene("RecipeScene");
+                if(CookingGameManager.cookingSceneChange == 1)
+                {
+                SceneManager.LoadScene("CTEasy");
+                }
+                else if(CookingGameManager.cookingSceneChange == 2)
+                {
+                    SceneManager.LoadScene("CTNoraml");
+                }
+                else if(CookingGameManager.cookingSceneChange == 3)
+                {
+                    SceneManager.LoadScene("CTHard");
+                }
             }
             else if (transform.name == "Trash Can")
             {

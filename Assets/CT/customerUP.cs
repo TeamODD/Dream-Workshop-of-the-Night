@@ -22,7 +22,8 @@ public class customerUP : MonoBehaviour
     }
     private void Update()
     {
-        int customerNum = recipeUP.customerNum;
+        //int customerNum = recipeUP.customerNum;
+        int customerNum = CookingGameManager.cookingCustomerIndex;
         if (customerNum == 1&&!is_1)
         {
             is_1 = true;

@@ -35,20 +35,30 @@ public class FoodEat : MonoBehaviour
             food.SetActive(true);
             customer.SetActive(true);
         }
-        if (recipeUP.customerNum == 2)
+        //if (recipeUP.customerNum == 2)
+        //    targetImage.sprite = customerB2;
+        //if (recipeUP.customerNum == 3)
+        //    targetImage.sprite = customerB3;
+        if(CookingGameManager.cookingCustomerIndex == 2)
             targetImage.sprite = customerB2;
-        if (recipeUP.customerNum == 3)
+        if(CookingGameManager.cookingCustomerIndex == 3)
             targetImage.sprite = customerB3;
     }
 
     public void FoodButton()
     {
         // 이미지 먼저 변경
-        if (recipeUP.customerNum == 1)
+        //if (recipeUP.customerNum == 1)
+        //    targetImage.sprite = customerH1;
+        //if (recipeUP.customerNum == 2)
+        //    targetImage.sprite = customerH2;
+        //if (recipeUP.customerNum == 3)
+        //    targetImage.sprite = customerH3;
+        if(CookingGameManager.cookingCustomerIndex == 1)
             targetImage.sprite = customerH1;
-        if (recipeUP.customerNum == 2)
+        if (CookingGameManager.cookingCustomerIndex == 2)
             targetImage.sprite = customerH2;
-        if (recipeUP.customerNum == 3)
+        if (CookingGameManager.cookingCustomerIndex == 3)
             targetImage.sprite = customerH3;
 
         // 한 프레임 기다린 뒤 MoveDown 실행
@@ -90,6 +100,7 @@ public class FoodEat : MonoBehaviour
         customer.SetActive(false);
         food.SetActive(false);
         yield return new WaitForSeconds(2f);
-        recipeUP.customerNum++;
+        //recipeUP.customerNum++;
+        CookingGameManager.cookingCustomerIndex++;
     }
 }

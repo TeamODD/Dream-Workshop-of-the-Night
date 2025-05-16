@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RecipeScene.unity
     guid: 2552557b3e4e025489aad3e41b3229fd
   - enabled: 1
-    path: Assets/Scenes/CT.unity
+    path: Assets/Scenes/CTEasy.unity
     guid: 0b86ff96a39d57047844c600f73c220a
   - enabled: 1
     path: Assets/Scenes/GT.unity

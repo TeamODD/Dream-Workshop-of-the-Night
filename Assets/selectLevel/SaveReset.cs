@@ -6,6 +6,7 @@ public class SaveReset : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("EasyClear");
         PlayerPrefs.DeleteKey("NormalClear");
+        CookingGameManager.cookingSceneChange = 1;
     }
     
 }

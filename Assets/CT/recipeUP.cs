@@ -7,12 +7,14 @@ public class recipeUP : MonoBehaviour
     public Vector2 targetPosition;
     private Vector2 startPosition;
     private Coroutine currentCoroutine;
-    public static int customerNum = 0;
+    //public static int customerNum = 0;
     void Start()
     {
         startPosition = new Vector2(targetPosition.x, -Screen.height);
         recipepaper.anchoredPosition = startPosition;
-        if (customerNum == 0)
+        //if (customerNum == 0)
+        //    MoveUp();
+        if (CookingGameManager.cookingCustomerIndex == 0)
             MoveUp();
     }
     public void MoveUp()
@@ -26,7 +28,8 @@ public class recipeUP : MonoBehaviour
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
         currentCoroutine = StartCoroutine(AnimatePanel(startPosition));
-        customerNum = 1;
+        //customerNum = 1;
+        CookingGameManager.cookingCustomerIndex = 1;
     }
     IEnumerator AnimatePanel(Vector2 destination)
     {

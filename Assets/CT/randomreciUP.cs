@@ -28,7 +28,7 @@ public class randomreciUP : MonoBehaviour
             StopCoroutine(currentCoroutine);
         currentCoroutine = StartCoroutine(AnimatePanel(startPosition));
         food_ok = true;
-        SceneManager.LoadScene("GT");
+        SceneManager.LoadScene("CookingScene");
     }
     IEnumerator AnimatePanel(Vector2 destination)
     {
@@ -53,7 +53,8 @@ public class randomreciUP : MonoBehaviour
         else if (destination == startPosition)
         {
             food_ok = true;
-            SceneManager.LoadScene("GT");
+            //SceneManager.LoadScene("GT");
+            SceneManager.LoadScene("CookingScene");
         }
     }
 }

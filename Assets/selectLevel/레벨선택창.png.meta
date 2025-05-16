@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0c1c6a95921960f4692540597553615c
+guid: 748e8d9aa0419534aacf243a5b1eec0d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6295514641972049862
-    second: gameoverBackground_0
+      213: 7784092270637042540
+    second: "\uB808\uBCA8\uC120\uD0DD\uCC3D_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,32 +110,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -152,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gameoverBackground_0
+      name: "\uB808\uBCA8\uC120\uD0DD\uCC3D_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -167,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a384cf6c9c6d1a8a0800000000000000
-      internalID: -6295514641972049862
+      spriteID: c6b4f22ada6a60c60800000000000000
+      internalID: 7784092270637042540
       vertices: []
       indices: 
       edges: []
@@ -186,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      gameoverBackground_0: -6295514641972049862
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

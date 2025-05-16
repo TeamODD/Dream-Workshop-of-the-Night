@@ -16,7 +16,8 @@ public class CookingGameManager : MonoBehaviour
         }
     }
 
-    public static int cookingCustomerIndex;
+    public static int cookingCustomerIndex = 0;
+    public static int cookingSceneChange = 1;
 
     private void Awake()
     {
@@ -30,21 +31,19 @@ public class CookingGameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        cookingCustomerIndex = 5;
+        //cookingCustomerIndex = 0;
     }
 
-    public void setCookingCustomerIndex()
+    public void setCookingSceneIndex()
     {
-        if (cookingCustomerIndex < 8)
-        {
-            cookingCustomerIndex++;
-        }
-        else if (cookingCustomerIndex == 8)
-        {
-            cookingCustomerIndex = 0;
-        }
+        cookingSceneChange = cookingSceneChange + 2;
     }
 
+
+    public void setCTIndex(int index)
+    {
+        cookingCustomerIndex = index;
+    }
     public int getCookingCustomerIndex()
     {
         return cookingCustomerIndex;
