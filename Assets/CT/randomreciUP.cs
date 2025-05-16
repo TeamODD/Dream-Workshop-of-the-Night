@@ -12,6 +12,7 @@ public class randomreciUP : MonoBehaviour
     public static bool food_ok = false;
     public GameObject pixrecipe;
     public GameObject randrecipe;
+    public AudioSource audioSource;
     void Start()
     {
         startPosition = new Vector2(targetPosition.x, -Screen.height);
@@ -51,6 +52,7 @@ public class randomreciUP : MonoBehaviour
 
         if (destination == targetPosition)
         {
+            audioSource.Play();
             yield return new WaitForSeconds(3f);
             StartCoroutine(AnimatePanel(startPosition));
         }

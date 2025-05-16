@@ -18,6 +18,10 @@ public class gameclearmessage : MonoBehaviour
         if (CookingGameManager.cookingCustomerIndex == 4)
         {
             clearpanel.SetActive(true);
+            customerUP.is_1 = false;
+            customerUP.is_2 = false;
+            customerUP.is_3 = false;
+            randomreciUP.food_ok = false;
             Invoke("LoadSelect", 3f);
             PlayerPrefs.SetInt("EasyClear", 1);
             PlayerPrefs.Save();

@@ -277,7 +277,7 @@ public class CookingCheck : MonoBehaviour
             {
                 // 완성된 재료 프리팹을 생성해서 completeSlot에 붙임
                 Debug.Log("요리 완성");
-                completeIngredientPrefab.gameObject.GetComponent<Image>().sprite = completeFoodSprites[CookingGameManager.cookingCustomerIndex];
+                completeIngredientPrefab.gameObject.GetComponent<Image>().sprite = completeFoodSprites[CookingGameManager.cookingSceneCustomerIndex];
             }
 
             else

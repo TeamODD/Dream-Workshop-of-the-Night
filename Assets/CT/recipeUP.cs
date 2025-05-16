@@ -8,6 +8,7 @@ public class recipeUP : MonoBehaviour
     private Vector2 startPosition;
     private Coroutine currentCoroutine;
     //public static int customerNum = 0;
+    public AudioSource audioSource;
     void Start()
     {
         startPosition = new Vector2(targetPosition.x, -Screen.height);
@@ -43,10 +44,11 @@ public class recipeUP : MonoBehaviour
             recipepaper.anchoredPosition = Vector2.Lerp(initialPosition, destination, t);
             yield return null;
         }
-
+        
         recipepaper.anchoredPosition = destination;
         if (destination == targetPosition)
         {
+            audioSource.Play();
             yield return new WaitForSeconds(3f);
             MoveDown();
         }

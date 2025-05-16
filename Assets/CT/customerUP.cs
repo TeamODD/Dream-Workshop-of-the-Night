@@ -13,7 +13,7 @@ public class customerUP : MonoBehaviour
     public Image customerImage;
     public Sprite customer2;
     public Sprite customer3;
-    static bool is_1 = false, is_2 = false, is_3 = false;
+    public static bool is_1 = false, is_2 = false, is_3 = false;
     public Image say;
     public Sprite say2;
     public Sprite say3;

@@ -14,7 +14,7 @@ public class SetCTSceneRandom : MonoBehaviour
 
     private void setCustomerIngredientCount()
     {
-        randomObejct.SetActive(false);
+        //randomObejct.SetActive(false);
         int index = CookingGameManager.Instance.getCookingCustomerIndex();
         // 현재 인덱스 확인
         Debug.Log(index);

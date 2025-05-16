@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Image progressImage;
-    public float duration = 40f; // 한 바퀴 도는 데 걸리는 시간 (초)
+    public float duration = 60f; // 한 바퀴 도는 데 걸리는 시간 (초)
     private float elapsed = 0f;
 
     void Update()

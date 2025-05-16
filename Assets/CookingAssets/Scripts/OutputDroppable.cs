@@ -50,7 +50,7 @@ public class OutputDroppable : MonoBehaviour, IPointerEnterHandler, IDropHandler
                 }
                 else if(CookingGameManager.cookingSceneChange == 2)
                 {
-                    SceneManager.LoadScene("CTNoraml");
+                    SceneManager.LoadScene("CTNormal");
                 }
                 else if(CookingGameManager.cookingSceneChange == 3)
                 {
