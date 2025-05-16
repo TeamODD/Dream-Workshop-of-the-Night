@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DataEgg
   m_EditorClassIdentifier: 
   ingredient_name: Egg
-  ingredient_amount: 2
+  ingredient_amount: 3
   picture: {fileID: 1748778701769336890, guid: d90afcc8ec4c0ce42aa2c58b11dc299b, type: 3}

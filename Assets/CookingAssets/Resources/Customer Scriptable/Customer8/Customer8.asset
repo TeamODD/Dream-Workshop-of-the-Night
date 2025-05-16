@@ -19,9 +19,9 @@ MonoBehaviour:
   customerSpriteChange: 0
   order:
     fixedIngredients:
-    - {fileID: 11400000, guid: 5a9d0f3e691d5ca4491d153533f0b952, type: 2}
-    - {fileID: 11400000, guid: b93b0b4d9ac7aef4b8d73de5b6023d55, type: 2}
-    - {fileID: 11400000, guid: d0ae9ec99e025304ebd6c22d01a34ef4, type: 2}
+    - {fileID: 11400000, guid: 6f47b0e8f22cd514b81ceb613915b3cb, type: 2}
+    - {fileID: 11400000, guid: cf3b07afb0d7f3b45988dcf3b3338788, type: 2}
+    - {fileID: 11400000, guid: 8dccc3eabad5e494eac9fabab1351c1e, type: 2}
     randomingredients:
     - {fileID: 11400000, guid: a975cf85447163242b4b8e5f29d0d137, type: 2}
     - {fileID: 11400000, guid: 149943ab468cc134f9bfcfa0b3ef6c70, type: 2}

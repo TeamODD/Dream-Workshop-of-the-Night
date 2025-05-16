@@ -11,6 +11,7 @@ public class randomreciUP : MonoBehaviour
     public GameObject okButton;
     public static bool food_ok = false;
     public GameObject pixrecipe;
+    public GameObject randrecipe;
     void Start()
     {
         startPosition = new Vector2(targetPosition.x, -Screen.height);
@@ -20,6 +21,7 @@ public class randomreciUP : MonoBehaviour
     {
         okButton.SetActive(false);
         pixrecipe.SetActive(false);
+        randrecipe.SetActive(true);
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
         currentCoroutine = StartCoroutine(AnimatePanel(targetPosition));
