@@ -8,6 +8,7 @@ public class IngredientDraggable : MonoBehaviour, IBeginDragHandler, IDragHandle
     private RectTransform draggedRect;
     private GameObject draggedInstance;
     private CanvasGroup originalCanvasGroup;
+    public GameObject ingredientPrefab;
 
     public static GameObject CurrentDragged { get; private set; } // 드롭 처리용
 
@@ -20,7 +21,7 @@ public class IngredientDraggable : MonoBehaviour, IBeginDragHandler, IDragHandle
     public void OnBeginDrag(PointerEventData eventData)
     {
         // 자기 자신 복제
-        draggedInstance = Instantiate(gameObject, canvas); // canvas를 부모로 설정 (worldPositionStays = false)
+        draggedInstance = Instantiate(ingredientPrefab, canvas); // canvas를 부모로 설정 (worldPositionStays = false)
         draggedInstance.transform.SetAsLastSibling(); // UI 위에 표시
 
         // RectTransform 설정
