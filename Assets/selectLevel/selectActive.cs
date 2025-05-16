@@ -8,16 +8,16 @@ public class selectActive : MonoBehaviour
     {
         int clearEasy = PlayerPrefs.GetInt("EasyClear", 0);
         int clearNormal = PlayerPrefs.GetInt("NormalClear", 0);
-        NormalButton.SetActive(false);
-        HardButton.SetActive(false);
+        NormalButton.SetActive(true);
+        HardButton.SetActive(true);
         if (clearEasy==1)
         {
-            NormalButton.SetActive(true);
+            NormalButton.SetActive(false);
         }
 
         if (clearNormal==1)
         {
-            HardButton.SetActive(true);
+            HardButton.SetActive(false);
         }
     }
 }

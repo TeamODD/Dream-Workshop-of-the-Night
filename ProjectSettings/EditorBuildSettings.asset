@@ -27,8 +27,8 @@ EditorBuildSettings:
     path: Assets/Scenes/CTEasy.unity
     guid: 0b86ff96a39d57047844c600f73c220a
   - enabled: 1
-    path: Assets/Scenes/GT.unity
-    guid: bd14a49ddcfee5d4c9a29e3c703356c5
+    path: Assets/Scenes/CTNormal.unity
+    guid: 4fbdbd135fbca7743a1c764375b6e6fc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
