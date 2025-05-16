@@ -9,11 +9,14 @@ public class customerUP : MonoBehaviour
     private Vector2 startPosition;
     private Coroutine currentCoroutine;
     public GameObject saybubble;
+    public GameObject okButton;
     public Image customerImage;
     public Sprite customer2;
     public Sprite customer3;
     static bool is_1 = false, is_2 = false, is_3 = false;
-    
+    public Image say;
+    public Sprite say2;
+    public Sprite say3;
     void Start()
     {
         startPosition = new Vector2(targetPosition.x, -Screen.height);
@@ -71,6 +74,16 @@ public class customerUP : MonoBehaviour
         if (destination == targetPosition)
         {
             saybubble.SetActive(true);
+            okButton.SetActive(true);
+            int customerNum = CookingGameManager.cookingCustomerIndex;
+            if (customerNum == 2)
+            {
+                say.sprite = say2;
+            }
+            else if (customerNum == 3)
+            {
+                say.sprite= say3;
+            }
         }
     }
 }

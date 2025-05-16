@@ -13,12 +13,23 @@ public class FoodEat : MonoBehaviour
     public Sprite customerH3;         // 고객 이미지 3
     public Sprite customerB2;
     public Sprite customerB3;
+    public Image foodImage;
+    public Sprite food2;
+    public Sprite food3;
+    public Sprite food1_ate;
+    public Sprite food2_ate;
+    public Sprite food3_ate;
     public RectTransform customerT;   // 고객 RectTransform
     public float animationDuration = 1.5f;  // 애니메이션 지속 시간
     private Vector2 startPosition;    // 시작 위치
     private Vector2 offscreenPosition; // 화면 밖 위치
     private Coroutine currentCoroutine;  // 현재 실행 중인 코루틴
-
+    public GameObject saybubble;
+    public GameObject okButton;
+    public Image say;
+    public Sprite say1;
+    public Sprite say2;
+    public Sprite say3;
     void Start()
     {
         // 음식과 고객 비활성화
@@ -40,9 +51,16 @@ public class FoodEat : MonoBehaviour
         //if (recipeUP.customerNum == 3)
         //    targetImage.sprite = customerB3;
         if(CookingGameManager.cookingCustomerIndex == 2)
+        {
             targetImage.sprite = customerB2;
+            foodImage.sprite = food2;
+        }
         if(CookingGameManager.cookingCustomerIndex == 3)
+        {
             targetImage.sprite = customerB3;
+            foodImage.sprite = food3;
+        }
+            
     }
 
     public void FoodButton()
@@ -54,12 +72,26 @@ public class FoodEat : MonoBehaviour
         //    targetImage.sprite = customerH2;
         //if (recipeUP.customerNum == 3)
         //    targetImage.sprite = customerH3;
-        if(CookingGameManager.cookingCustomerIndex == 1)
+        saybubble.SetActive(true);
+        okButton.SetActive(false);
+        if (CookingGameManager.cookingCustomerIndex == 1)
+        {
             targetImage.sprite = customerH1;
+            foodImage.sprite = food1_ate;
+            say.sprite = say1;
+        }
         if (CookingGameManager.cookingCustomerIndex == 2)
+        {
             targetImage.sprite = customerH2;
+            foodImage.sprite = food2_ate;
+            say.sprite = say2;
+        }
         if (CookingGameManager.cookingCustomerIndex == 3)
+        {
             targetImage.sprite = customerH3;
+            foodImage.sprite = food3_ate;
+            say.sprite = say3;
+        }
 
         // 한 프레임 기다린 뒤 MoveDown 실행
         StartCoroutine(WaitAndMoveDown());
@@ -75,6 +107,7 @@ public class FoodEat : MonoBehaviour
     // 고객을 화면 밖으로 내려가게 하는 메서드
     public void MoveDown()
     {
+        saybubble.SetActive(false);
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
 

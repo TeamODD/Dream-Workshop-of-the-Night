@@ -10,6 +10,7 @@ public class randomreciUP : MonoBehaviour
     private Coroutine currentCoroutine;
     public GameObject okButton;
     public static bool food_ok = false;
+    public GameObject pixrecipe;
     void Start()
     {
         startPosition = new Vector2(targetPosition.x, -Screen.height);
@@ -18,6 +19,7 @@ public class randomreciUP : MonoBehaviour
     public void MoveUp()
     {
         okButton.SetActive(false);
+        pixrecipe.SetActive(false);
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
         currentCoroutine = StartCoroutine(AnimatePanel(targetPosition));
@@ -53,7 +55,6 @@ public class randomreciUP : MonoBehaviour
         else if (destination == startPosition)
         {
             food_ok = true;
-            //SceneManager.LoadScene("GT");
             SceneManager.LoadScene("CookingScene");
         }
     }
