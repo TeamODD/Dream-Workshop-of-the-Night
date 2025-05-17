@@ -635,7 +635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.325875, y: 0.089}
   m_AnchorMax: {x: 0.5682501, y: 0.24200001}
-  m_AnchoredPosition: {x: -379.52057, y: 17.720276}
+  m_AnchoredPosition: {x: -307.00055, y: 47.720272}
   m_SizeDelta: {x: 424.1565, y: 146.84329}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218591107
@@ -1403,6 +1403,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1392979623}
     m_Modifications:
     - target: {fileID: 3825000794057715196, guid: 344ba5a4d9e61834ea4e15c8c898eb8d, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 542f7d87b1e779449bbe9d790b0e9ffa, type: 3}
+    - target: {fileID: 3825000794057715196, guid: 344ba5a4d9e61834ea4e15c8c898eb8d, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 542f7d87b1e779449bbe9d790b0e9ffa, type: 3}
+    - target: {fileID: 3825000794057715196, guid: 344ba5a4d9e61834ea4e15c8c898eb8d, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -1695,7 +1703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -388.52002, y: -41}
+  m_AnchoredPosition: {x: -316, y: -11}
   m_SizeDelta: {x: 340, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364309435
@@ -1775,7 +1783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6051459, y: 0.13066667}
   m_AnchorMax: {x: 0.6936875, y: 0.24200001}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -81, y: -66}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1392979624

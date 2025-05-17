@@ -29,11 +29,11 @@ public class IngredientDraggable : MonoBehaviour, IBeginDragHandler, IDragHandle
         draggedRect = draggedInstance.GetComponent<RectTransform>();
 
         // 원본의 크기/스케일 복사
-        draggedRect.anchorMin = originalRect.anchorMin;
-        draggedRect.anchorMax = originalRect.anchorMax;
-        draggedRect.pivot = originalRect.pivot;
-        draggedRect.sizeDelta = originalRect.sizeDelta;
-        draggedRect.localScale = originalRect.localScale;
+        //draggedRect.anchorMin = originalRect.anchorMin;
+        //draggedRect.anchorMax = originalRect.anchorMax;
+        //draggedRect.pivot = originalRect.pivot;
+        //draggedRect.sizeDelta = originalRect.sizeDelta;
+        //draggedRect.localScale = originalRect.localScale;
 
         // 마우스 위치로 이동
         draggedRect.position = eventData.position;
